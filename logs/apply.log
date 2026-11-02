@@ -1,0 +1,34 @@
+random_id.bucket_suffix: Creating...
+random_id.bucket_suffix: Creation complete after 0s [id=yhrIxg]
+aws_key_pair.lab_key: Creating...
+aws_security_group.lab_sg: Creating...
+aws_s3_bucket.lab_bucket: Creating...
+aws_key_pair.lab_key: Creation complete after 2s [id=lab3-dtc235180104]
+aws_security_group.lab_sg: Creation complete after 7s [id=sg-07672ac62f4e5ff49]
+aws_instance.lab_server: Creating...
+aws_s3_bucket.lab_bucket: Creation complete after 10s [id=lab3-dtc235180104-ca1ac8c6]
+aws_s3_bucket_versioning.lab_bucket_versioning: Creating...
+aws_s3_bucket_server_side_encryption_configuration.lab_bucket_encryption: Creating...
+aws_s3_bucket_server_side_encryption_configuration.lab_bucket_encryption: Creation complete after 2s [id=lab3-dtc235180104-ca1ac8c6]
+aws_s3_bucket_versioning.lab_bucket_versioning: Creation complete after 4s [id=lab3-dtc235180104-ca1ac8c6]
+aws_instance.lab_server: Still creating... [10s elapsed]
+aws_instance.lab_server: Creation complete after 17s [id=i-07c08e32d6db58bd7]
+
+Apply complete! Resources: 7 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+ec2_instance_id = "i-07c08e32d6db58bd7"
+ec2_private_ip = "172.31.36.194"
+ec2_public_dns = "ec2-16-178-143-56.ap-southeast-2.compute.amazonaws.com"
+ec2_public_ip = "16.178.143.56"
+lab_summary = {
+  "EC2_ID" = "i-07c08e32d6db58bd7"
+  "EC2_IP" = "16.178.143.56"
+  "Environment" = "dev"
+  "Region" = "ap-southeast-2"
+  "S3_Bucket" = "lab3-dtc235180104-ca1ac8c6"
+}
+s3_bucket_arn = "arn:aws:s3:::lab3-dtc235180104-ca1ac8c6"
+s3_bucket_name = "lab3-dtc235180104-ca1ac8c6"
+ssh_connect_command = "ssh -i ~/.ssh/lab3-dtc235180104.pem ec2-user@ec2-16-178-143-56.ap-southeast-2.compute.amazonaws.com"

@@ -1,0 +1,315 @@
+random_id.bucket_suffix: Refreshing state... [id=yhrIxg]
+data.aws_vpc.default: Reading...
+aws_key_pair.lab_key: Refreshing state... [id=lab3-dtc235180104]
+aws_s3_bucket.lab_bucket: Refreshing state... [id=lab3-dtc235180104-ca1ac8c6]
+data.aws_vpc.default: Read complete after 3s [id=vpc-07581132ea9590547]
+aws_security_group.lab_sg: Refreshing state... [id=sg-07672ac62f4e5ff49]
+aws_instance.lab_server: Refreshing state... [id=i-07c08e32d6db58bd7]
+aws_s3_bucket_versioning.lab_bucket_versioning: Refreshing state... [id=lab3-dtc235180104-ca1ac8c6]
+aws_s3_bucket_server_side_encryption_configuration.lab_bucket_encryption: Refreshing state... [id=lab3-dtc235180104-ca1ac8c6]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # aws_instance.lab_server will be destroyed
+  - resource "aws_instance" "lab_server" {
+      - ami                                  = "ami-062900c135ab91582" -> null
+      - arn                                  = "arn:aws:ec2:ap-southeast-2:145847015645:instance/i-07c08e32d6db58bd7" -> null
+      - associate_public_ip_address          = true -> null
+      - availability_zone                    = "ap-southeast-2b" -> null
+      - cpu_core_count                       = 1 -> null
+      - cpu_threads_per_core                 = 2 -> null
+      - disable_api_stop                     = false -> null
+      - disable_api_termination              = false -> null
+      - ebs_optimized                        = false -> null
+      - get_password_data                    = false -> null
+      - hibernation                          = false -> null
+      - id                                   = "i-07c08e32d6db58bd7" -> null
+      - instance_initiated_shutdown_behavior = "stop" -> null
+      - instance_state                       = "running" -> null
+      - instance_type                        = "t3.micro" -> null
+      - ipv6_address_count                   = 0 -> null
+      - ipv6_addresses                       = [] -> null
+      - key_name                             = "lab3-dtc235180104" -> null
+      - monitoring                           = false -> null
+      - placement_partition_number           = 0 -> null
+      - primary_network_interface_id         = "eni-0b8fd3a5e580e9123" -> null
+      - private_dns                          = "ip-172-31-36-194.ap-southeast-2.compute.internal" -> null
+      - private_ip                           = "172.31.36.194" -> null
+      - public_dns                           = "ec2-16-178-143-56.ap-southeast-2.compute.amazonaws.com" -> null
+      - public_ip                            = "16.178.143.56" -> null
+      - secondary_private_ips                = [] -> null
+      - security_groups                      = [
+          - "lab3-terraform-sg-dtc235180104",
+        ] -> null
+      - source_dest_check                    = true -> null
+      - subnet_id                            = "subnet-018b24e5bf382e67b" -> null
+      - tags                                 = {
+          - "Name" = "Lab3-Terraform-Server"
+        } -> null
+      - tags_all                             = {
+          - "Course"      = "DevOps-Bai3"
+          - "Environment" = "dev"
+          - "ManagedBy"   = "Terraform"
+          - "Name"        = "Lab3-Terraform-Server"
+          - "StudentId"   = "DTC235180104"
+        } -> null
+      - tenancy                              = "default" -> null
+      - user_data_replace_on_change          = false -> null
+      - vpc_security_group_ids               = [
+          - "sg-07672ac62f4e5ff49",
+        ] -> null
+        # (7 unchanged attributes hidden)
+
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      - cpu_options {
+          - core_count       = 1 -> null
+          - threads_per_core = 2 -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - credit_specification {
+          - cpu_credits = "standard" -> null
+        }
+
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      - maintenance_options {
+          - auto_recovery = "default" -> null
+        }
+
+      - metadata_options {
+          - http_endpoint               = "enabled" -> null
+          - http_protocol_ipv6          = "disabled" -> null
+          - http_put_response_hop_limit = 2 -> null
+          - http_tokens                 = "required" -> null
+          - instance_metadata_tags      = "disabled" -> null
+        }
+
+      - private_dns_name_options {
+          - enable_resource_name_dns_a_record    = false -> null
+          - enable_resource_name_dns_aaaa_record = false -> null
+          - hostname_type                        = "ip-name" -> null
+        }
+
+      - root_block_device {
+          - delete_on_termination = true -> null
+          - device_name           = "/dev/xvda" -> null
+          - encrypted             = true -> null
+          - iops                  = 3000 -> null
+          - kms_key_id            = "arn:aws:kms:ap-southeast-2:145847015645:key/cab8a5e2-1ce8-4aa4-a58a-0acb9c410129" -> null
+          - tags                  = {} -> null
+          - tags_all              = {
+              - "Course"      = "DevOps-Bai3"
+              - "Environment" = "dev"
+              - "ManagedBy"   = "Terraform"
+              - "StudentId"   = "DTC235180104"
+            } -> null
+          - throughput            = 125 -> null
+          - volume_id             = "vol-0aafddf6273ad1702" -> null
+          - volume_size           = 8 -> null
+          - volume_type           = "gp3" -> null
+        }
+    }
+
+  # aws_key_pair.lab_key will be destroyed
+  - resource "aws_key_pair" "lab_key" {
+      - arn             = "arn:aws:ec2:ap-southeast-2:145847015645:key-pair/lab3-dtc235180104" -> null
+      - fingerprint     = "a8:e6:b6:80:7b:59:df:f6:c6:4d:2e:6c:73:6f:92:b0" -> null
+      - id              = "lab3-dtc235180104" -> null
+      - key_name        = "lab3-dtc235180104" -> null
+      - key_pair_id     = "key-087e5b4de4cff7a1a" -> null
+      - key_type        = "rsa" -> null
+      - public_key      = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCmn6KX4KbLObehdFcxtaZz6kTv1NBbwSRnArlDSOF7Z0xoQkx4iyItuXJ5pDhkT+Cow6eFgLGlABp9onkWhwru4UIzEE4Y4c9LUQ1YenY5RN4Fi/KxJH6BrikEv7cBvqAJ1D6m75tvs9iLfCrxtx4ifpQKUW4lhikL0tKOQegm4/XtT3BDJm+mjCKDsbyUazNKSbg/DO0AJ1u1BYVEGin8HosY9IGdHKH2FPWGT3yaUiyTji2+/uTL55gPfe2vZsT7I/Uqz6vpB+BJo7zm48IzCg9ICQPI9OdNyakUPTjsCTPCGxyUi3aqYQ8BiyyF0Ew5o0dIOTzieOlTjD2yRVkAuW1HjTKgfzwIVRyZ3zA50z7ZpSsrci1czscrdAQ0qEie2MbAwA7yftAAh6j+aE+ffQJr5+BismAvqj7+WG96TY5eskau5JY+AC8+wCnyUm/XXsvScE0WEbMF1/inNBmABZrDOxXRkg9FVSUyBRoHgrQxX8cSNBwVm/GUrtJUMiHM7cZ2gbG5YkdA+prZlAIJ5v5krxxN6dyXbDYAeayHgdfTo7+Va4/6YpfdwUotcRwYFeqn0ZjRNHveBhoITGLguUFD6zAaFwFXFHQ5z855/JdkD0vTGuLdgj4LBfPHQSjRjLVnwo49tqoA88bFsLMO5IK1UmjPhbcC7/VjrZX8Lw== devops-lab-03-DTC235180104" -> null
+      - tags            = {} -> null
+      - tags_all        = {
+          - "Course"      = "DevOps-Bai3"
+          - "Environment" = "dev"
+          - "ManagedBy"   = "Terraform"
+          - "StudentId"   = "DTC235180104"
+        } -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # aws_s3_bucket.lab_bucket will be destroyed
+  - resource "aws_s3_bucket" "lab_bucket" {
+      - arn                         = "arn:aws:s3:::lab3-dtc235180104-ca1ac8c6" -> null
+      - bucket                      = "lab3-dtc235180104-ca1ac8c6" -> null
+      - bucket_domain_name          = "lab3-dtc235180104-ca1ac8c6.s3.amazonaws.com" -> null
+      - bucket_regional_domain_name = "lab3-dtc235180104-ca1ac8c6.s3.ap-southeast-2.amazonaws.com" -> null
+      - force_destroy               = false -> null
+      - hosted_zone_id              = "Z1WCIGYICN2BYD" -> null
+      - id                          = "lab3-dtc235180104-ca1ac8c6" -> null
+      - object_lock_enabled         = false -> null
+      - region                      = "ap-southeast-2" -> null
+      - request_payer               = "BucketOwner" -> null
+      - tags                        = {} -> null
+      - tags_all                    = {
+          - "Course"      = "DevOps-Bai3"
+          - "Environment" = "dev"
+          - "ManagedBy"   = "Terraform"
+          - "StudentId"   = "DTC235180104"
+        } -> null
+        # (3 unchanged attributes hidden)
+
+      - grant {
+          - id          = "abfccbc697fa10c5ff01935e2a02642160b4308282fac139afe28b308a86fb76" -> null
+          - permissions = [
+              - "FULL_CONTROL",
+            ] -> null
+          - type        = "CanonicalUser" -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - server_side_encryption_configuration {
+          - rule {
+              - bucket_key_enabled = false -> null
+
+              - apply_server_side_encryption_by_default {
+                  - sse_algorithm     = "AES256" -> null
+                    # (1 unchanged attribute hidden)
+                }
+            }
+        }
+
+      - versioning {
+          - enabled    = true -> null
+          - mfa_delete = false -> null
+        }
+    }
+
+  # aws_s3_bucket_server_side_encryption_configuration.lab_bucket_encryption will be destroyed
+  - resource "aws_s3_bucket_server_side_encryption_configuration" "lab_bucket_encryption" {
+      - bucket                = "lab3-dtc235180104-ca1ac8c6" -> null
+      - id                    = "lab3-dtc235180104-ca1ac8c6" -> null
+        # (1 unchanged attribute hidden)
+
+      - rule {
+          - bucket_key_enabled = false -> null
+
+          - apply_server_side_encryption_by_default {
+              - sse_algorithm     = "AES256" -> null
+                # (1 unchanged attribute hidden)
+            }
+        }
+    }
+
+  # aws_s3_bucket_versioning.lab_bucket_versioning will be destroyed
+  - resource "aws_s3_bucket_versioning" "lab_bucket_versioning" {
+      - bucket                = "lab3-dtc235180104-ca1ac8c6" -> null
+      - id                    = "lab3-dtc235180104-ca1ac8c6" -> null
+        # (1 unchanged attribute hidden)
+
+      - versioning_configuration {
+          - status     = "Enabled" -> null
+            # (1 unchanged attribute hidden)
+        }
+    }
+
+  # aws_security_group.lab_sg will be destroyed
+  - resource "aws_security_group" "lab_sg" {
+      - arn                    = "arn:aws:ec2:ap-southeast-2:145847015645:security-group/sg-07672ac62f4e5ff49" -> null
+      - description            = "Lab 3: restricted SSH and public HTTP" -> null
+      - egress                 = [
+          - {
+              - cidr_blocks      = [
+                  - "0.0.0.0/0",
+                ]
+              - from_port        = 0
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "-1"
+              - security_groups  = []
+              - self             = false
+              - to_port          = 0
+                # (1 unchanged attribute hidden)
+            },
+        ] -> null
+      - id                     = "sg-07672ac62f4e5ff49" -> null
+      - ingress                = [
+          - {
+              - cidr_blocks      = [
+                  - "0.0.0.0/0",
+                ]
+              - description      = "HTTP access"
+              - from_port        = 80
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = []
+              - self             = false
+              - to_port          = 80
+            },
+          - {
+              - cidr_blocks      = [
+                  - "104.28.243.55/32",
+                ]
+              - description      = "SSH from the operator IPv4 address"
+              - from_port        = 22
+              - ipv6_cidr_blocks = []
+              - prefix_list_ids  = []
+              - protocol         = "tcp"
+              - security_groups  = []
+              - self             = false
+              - to_port          = 22
+            },
+        ] -> null
+      - name                   = "lab3-terraform-sg-dtc235180104" -> null
+      - owner_id               = "145847015645" -> null
+      - revoke_rules_on_delete = false -> null
+      - tags                   = {
+          - "Name" = "Lab3-SG"
+        } -> null
+      - tags_all               = {
+          - "Course"      = "DevOps-Bai3"
+          - "Environment" = "dev"
+          - "ManagedBy"   = "Terraform"
+          - "Name"        = "Lab3-SG"
+          - "StudentId"   = "DTC235180104"
+        } -> null
+      - vpc_id                 = "vpc-07581132ea9590547" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # random_id.bucket_suffix will be destroyed
+  - resource "random_id" "bucket_suffix" {
+      - b64_std     = "yhrIxg==" -> null
+      - b64_url     = "yhrIxg" -> null
+      - byte_length = 4 -> null
+      - dec         = "3390752966" -> null
+      - hex         = "ca1ac8c6" -> null
+      - id          = "yhrIxg" -> null
+    }
+
+Plan: 0 to add, 0 to change, 7 to destroy.
+
+Changes to Outputs:
+  - ec2_instance_id     = "i-07c08e32d6db58bd7" -> null
+  - ec2_private_ip      = "172.31.36.194" -> null
+  - ec2_public_dns      = "ec2-16-178-143-56.ap-southeast-2.compute.amazonaws.com" -> null
+  - ec2_public_ip       = "16.178.143.56" -> null
+  - lab_summary         = {
+      - EC2_ID      = "i-07c08e32d6db58bd7"
+      - EC2_IP      = "16.178.143.56"
+      - Environment = "dev"
+      - Region      = "ap-southeast-2"
+      - S3_Bucket   = "lab3-dtc235180104-ca1ac8c6"
+    } -> null
+  - s3_bucket_arn       = "arn:aws:s3:::lab3-dtc235180104-ca1ac8c6" -> null
+  - s3_bucket_name      = "lab3-dtc235180104-ca1ac8c6" -> null
+  - ssh_connect_command = "ssh -i ~/.ssh/lab3-dtc235180104.pem ec2-user@ec2-16-178-143-56.ap-southeast-2.compute.amazonaws.com" -> null
+
+─────────────────────────────────────────────────────────────────────────────
+
+Saved the plan to: destroy.tfplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "destroy.tfplan"

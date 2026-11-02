@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-11-02T00:52:12.767682+00:00",
+  "result": "PASS",
+  "terraform_state_empty": true,
+  "lab_resources_deleted": true,
+  "preexisting_resources_preserved": true,
+  "before": {
+    "instances": [],
+    "buckets": [],
+    "security_groups": [
+      "sg-0bf586a6d91ec5453"
+    ],
+    "key_pairs": [],
+    "volumes": []
+  },
+  "after": {
+    "instances": [
+      {
+        "Id": "i-07c08e32d6db58bd7",
+        "State": "terminated"
+      }
+    ],
+    "buckets": [],
+    "security_groups": [
+      "sg-0bf586a6d91ec5453"
+    ],
+    "key_pairs": [],
+    "volumes": [],
+    "default_vpc": [
+      "available"
+    ]
+  }
+}

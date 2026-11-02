@@ -1,0 +1,57 @@
+{
+  "ec2_instance_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "i-07c08e32d6db58bd7"
+  },
+  "ec2_private_ip": {
+    "sensitive": false,
+    "type": "string",
+    "value": "172.31.36.194"
+  },
+  "ec2_public_dns": {
+    "sensitive": false,
+    "type": "string",
+    "value": "ec2-16-178-143-56.ap-southeast-2.compute.amazonaws.com"
+  },
+  "ec2_public_ip": {
+    "sensitive": false,
+    "type": "string",
+    "value": "16.178.143.56"
+  },
+  "lab_summary": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "EC2_ID": "string",
+        "EC2_IP": "string",
+        "Environment": "string",
+        "Region": "string",
+        "S3_Bucket": "string"
+      }
+    ],
+    "value": {
+      "EC2_ID": "i-07c08e32d6db58bd7",
+      "EC2_IP": "16.178.143.56",
+      "Environment": "dev",
+      "Region": "ap-southeast-2",
+      "S3_Bucket": "lab3-dtc235180104-ca1ac8c6"
+    }
+  },
+  "s3_bucket_arn": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:s3:::lab3-dtc235180104-ca1ac8c6"
+  },
+  "s3_bucket_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "lab3-dtc235180104-ca1ac8c6"
+  },
+  "ssh_connect_command": {
+    "sensitive": false,
+    "type": "string",
+    "value": "ssh -i ~/.ssh/lab3-dtc235180104.pem ec2-user@ec2-16-178-143-56.ap-southeast-2.compute.amazonaws.com"
+  }
+}

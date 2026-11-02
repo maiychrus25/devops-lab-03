@@ -1,0 +1,383 @@
+{
+  "round": 2,
+  "timestamp": "2026-11-02T00:45:06.077039+00:00",
+  "result": "PASS",
+  "parallel_read_calls": 8,
+  "checks": 15,
+  "responses": {
+    "identity": {
+      "UserId": "AROASD5JI3DOZCTIPY2FI:f4d834f8-e0a1-70e5-b043-299a07f7e611",
+      "Account": "145847015645",
+      "Arn": "arn:aws:sts::145847015645:assumed-role/AccountFullAccessRole/f4d834f8-e0a1-70e5-b043-299a07f7e611"
+    },
+    "instance": {
+      "Reservations": [
+        {
+          "ReservationId": "r-09284000d0f8c3c33",
+          "OwnerId": "145847015645",
+          "Groups": [],
+          "Instances": [
+            {
+              "Architecture": "x86_64",
+              "BlockDeviceMappings": [
+                {
+                  "DeviceName": "/dev/xvda",
+                  "Ebs": {
+                    "AttachTime": "2026-11-02T00:43:43+00:00",
+                    "DeleteOnTermination": true,
+                    "Status": "attached",
+                    "VolumeId": "vol-0aafddf6273ad1702",
+                    "EbsCardIndex": 0
+                  }
+                }
+              ],
+              "ClientToken": "terraform-20261102004341511500000001",
+              "EbsOptimized": false,
+              "EnaSupport": true,
+              "Hypervisor": "xen",
+              "NetworkInterfaces": [
+                {
+                  "Association": {
+                    "IpOwnerId": "amazon",
+                    "PublicDnsName": "ec2-16-178-143-56.ap-southeast-2.compute.amazonaws.com",
+                    "PublicIp": "16.178.143.56"
+                  },
+                  "Attachment": {
+                    "AttachTime": "2026-11-02T00:43:42+00:00",
+                    "AttachmentId": "eni-attach-00412a830ec2b0708",
+                    "DeleteOnTermination": true,
+                    "DeviceIndex": 0,
+                    "Status": "attached",
+                    "NetworkCardIndex": 0
+                  },
+                  "Description": "",
+                  "Groups": [
+                    {
+                      "GroupId": "sg-07672ac62f4e5ff49",
+                      "GroupName": "lab3-terraform-sg-dtc235180104"
+                    }
+                  ],
+                  "Ipv6Addresses": [],
+                  "MacAddress": "06:ff:e3:24:02:59",
+                  "NetworkInterfaceId": "eni-0b8fd3a5e580e9123",
+                  "OwnerId": "145847015645",
+                  "PrivateDnsName": "ip-172-31-36-194.ap-southeast-2.compute.internal",
+                  "PrivateIpAddress": "172.31.36.194",
+                  "PrivateIpAddresses": [
+                    {
+                      "Association": {
+                        "IpOwnerId": "amazon",
+                        "PublicDnsName": "ec2-16-178-143-56.ap-southeast-2.compute.amazonaws.com",
+                        "PublicIp": "16.178.143.56"
+                      },
+                      "Primary": true,
+                      "PrivateDnsName": "ip-172-31-36-194.ap-southeast-2.compute.internal",
+                      "PrivateIpAddress": "172.31.36.194"
+                    }
+                  ],
+                  "SourceDestCheck": true,
+                  "Status": "in-use",
+                  "SubnetId": "subnet-018b24e5bf382e67b",
+                  "VpcId": "vpc-07581132ea9590547",
+                  "InterfaceType": "interface",
+                  "Operator": {
+                    "Managed": false
+                  }
+                }
+              ],
+              "RootDeviceName": "/dev/xvda",
+              "RootDeviceType": "ebs",
+              "SecurityGroups": [
+                {
+                  "GroupId": "sg-07672ac62f4e5ff49",
+                  "GroupName": "lab3-terraform-sg-dtc235180104"
+                }
+              ],
+              "SourceDestCheck": true,
+              "Tags": [
+                {
+                  "Key": "Course",
+                  "Value": "DevOps-Bai3"
+                },
+                {
+                  "Key": "Environment",
+                  "Value": "dev"
+                },
+                {
+                  "Key": "Name",
+                  "Value": "Lab3-Terraform-Server"
+                },
+                {
+                  "Key": "ManagedBy",
+                  "Value": "Terraform"
+                },
+                {
+                  "Key": "StudentId",
+                  "Value": "DTC235180104"
+                }
+              ],
+              "VirtualizationType": "hvm",
+              "CpuOptions": {
+                "CoreCount": 1,
+                "ThreadsPerCore": 2
+              },
+              "CapacityReservationSpecification": {
+                "CapacityReservationPreference": "open"
+              },
+              "HibernationOptions": {
+                "Configured": false
+              },
+              "MetadataOptions": {
+                "State": "applied",
+                "HttpTokens": "required",
+                "HttpPutResponseHopLimit": 2,
+                "HttpEndpoint": "enabled",
+                "HttpProtocolIpv6": "disabled",
+                "InstanceMetadataTags": "disabled"
+              },
+              "EnclaveOptions": {
+                "Enabled": false
+              },
+              "BootMode": "uefi-preferred",
+              "PlatformDetails": "Linux/UNIX",
+              "UsageOperation": "RunInstances",
+              "UsageOperationUpdateTime": "2026-11-02T00:43:42+00:00",
+              "PrivateDnsNameOptions": {
+                "HostnameType": "ip-name",
+                "EnableResourceNameDnsARecord": false,
+                "EnableResourceNameDnsAAAARecord": false
+              },
+              "MaintenanceOptions": {
+                "AutoRecovery": "default",
+                "RebootMigration": "default"
+              },
+              "CurrentInstanceBootMode": "uefi",
+              "NetworkPerformanceOptions": {
+                "BandwidthWeighting": "default"
+              },
+              "Operator": {
+                "Managed": false,
+                "HiddenByDefault": false
+              },
+              "InstanceId": "i-07c08e32d6db58bd7",
+              "ImageId": "ami-062900c135ab91582",
+              "State": {
+                "Code": 16,
+                "Name": "running"
+              },
+              "PrivateDnsName": "ip-172-31-36-194.ap-southeast-2.compute.internal",
+              "PublicDnsName": "ec2-16-178-143-56.ap-southeast-2.compute.amazonaws.com",
+              "StateTransitionReason": "",
+              "KeyName": "lab3-dtc235180104",
+              "AmiLaunchIndex": 0,
+              "ProductCodes": [],
+              "InstanceType": "t3.micro",
+              "LaunchTime": "2026-11-02T00:43:42+00:00",
+              "Placement": {
+                "AvailabilityZoneId": "apse2-az3",
+                "GroupName": "",
+                "Tenancy": "default",
+                "AvailabilityZone": "ap-southeast-2b"
+              },
+              "Monitoring": {
+                "State": "disabled"
+              },
+              "SubnetId": "subnet-018b24e5bf382e67b",
+              "VpcId": "vpc-07581132ea9590547",
+              "PrivateIpAddress": "172.31.36.194",
+              "PublicIpAddress": "16.178.143.56"
+            }
+          ]
+        }
+      ]
+    },
+    "security_group": {
+      "SecurityGroups": [
+        {
+          "GroupId": "sg-07672ac62f4e5ff49",
+          "IpPermissionsEgress": [
+            {
+              "IpProtocol": "-1",
+              "UserIdGroupPairs": [],
+              "IpRanges": [
+                {
+                  "CidrIp": "0.0.0.0/0"
+                }
+              ],
+              "Ipv6Ranges": [],
+              "PrefixListIds": []
+            }
+          ],
+          "Tags": [
+            {
+              "Key": "Name",
+              "Value": "Lab3-SG"
+            },
+            {
+              "Key": "Course",
+              "Value": "DevOps-Bai3"
+            },
+            {
+              "Key": "StudentId",
+              "Value": "DTC235180104"
+            },
+            {
+              "Key": "ManagedBy",
+              "Value": "Terraform"
+            },
+            {
+              "Key": "Environment",
+              "Value": "dev"
+            }
+          ],
+          "VpcId": "vpc-07581132ea9590547",
+          "SecurityGroupArn": "arn:aws:ec2:ap-southeast-2:145847015645:security-group/sg-07672ac62f4e5ff49",
+          "OwnerId": "145847015645",
+          "GroupName": "lab3-terraform-sg-dtc235180104",
+          "Description": "Lab 3: restricted SSH and public HTTP",
+          "IpPermissions": [
+            {
+              "IpProtocol": "tcp",
+              "FromPort": 80,
+              "ToPort": 80,
+              "UserIdGroupPairs": [],
+              "IpRanges": [
+                {
+                  "Description": "HTTP access",
+                  "CidrIp": "0.0.0.0/0"
+                }
+              ],
+              "Ipv6Ranges": [],
+              "PrefixListIds": []
+            },
+            {
+              "IpProtocol": "tcp",
+              "FromPort": 22,
+              "ToPort": 22,
+              "UserIdGroupPairs": [],
+              "IpRanges": [
+                {
+                  "Description": "SSH from the operator IPv4 address",
+                  "CidrIp": "104.28.243.55/32"
+                }
+              ],
+              "Ipv6Ranges": [],
+              "PrefixListIds": []
+            }
+          ]
+        }
+      ]
+    },
+    "volume": {
+      "Volumes": [
+        {
+          "AvailabilityZoneId": "apse2-az3",
+          "Iops": 3000,
+          "Tags": [
+            {
+              "Key": "ManagedBy",
+              "Value": "Terraform"
+            },
+            {
+              "Key": "StudentId",
+              "Value": "DTC235180104"
+            },
+            {
+              "Key": "Environment",
+              "Value": "dev"
+            },
+            {
+              "Key": "Course",
+              "Value": "DevOps-Bai3"
+            }
+          ],
+          "VolumeType": "gp3",
+          "MultiAttachEnabled": false,
+          "Throughput": 125,
+          "Operator": {
+            "Managed": false,
+            "HiddenByDefault": false
+          },
+          "VolumeArn": "arn:aws:ec2:ap-southeast-2:145847015645:volume/vol-0aafddf6273ad1702",
+          "OwnerId": "145847015645",
+          "VolumeId": "vol-0aafddf6273ad1702",
+          "Size": 8,
+          "SnapshotId": "snap-0f0f4da6fab1e190a",
+          "AvailabilityZone": "ap-southeast-2b",
+          "State": "in-use",
+          "CreateTime": "2026-11-02T00:43:43.563000+00:00",
+          "Attachments": [
+            {
+              "DeleteOnTermination": true,
+              "EbsCardIndex": 0,
+              "VolumeId": "vol-0aafddf6273ad1702",
+              "InstanceId": "i-07c08e32d6db58bd7",
+              "Device": "/dev/xvda",
+              "State": "attached",
+              "AttachTime": "2026-11-02T00:43:43+00:00"
+            }
+          ],
+          "Encrypted": true,
+          "KmsKeyId": "arn:aws:kms:ap-southeast-2:145847015645:key/cab8a5e2-1ce8-4aa4-a58a-0acb9c410129"
+        }
+      ]
+    },
+    "key_pair": {
+      "KeyPairs": [
+        {
+          "KeyPairId": "key-087e5b4de4cff7a1a",
+          "KeyType": "rsa",
+          "Tags": [
+            {
+              "Key": "Environment",
+              "Value": "dev"
+            },
+            {
+              "Key": "ManagedBy",
+              "Value": "Terraform"
+            },
+            {
+              "Key": "Course",
+              "Value": "DevOps-Bai3"
+            },
+            {
+              "Key": "StudentId",
+              "Value": "DTC235180104"
+            }
+          ],
+          "CreateTime": "2026-11-02T00:43:35.423000+00:00",
+          "KeyName": "lab3-dtc235180104",
+          "KeyFingerprint": "a8:e6:b6:80:7b:59:df:f6:c6:4d:2e:6c:73:6f:92:b0"
+        }
+      ]
+    },
+    "versioning": {
+      "Status": "Enabled"
+    },
+    "encryption": {
+      "ServerSideEncryptionConfiguration": {
+        "Rules": [
+          {
+            "ApplyServerSideEncryptionByDefault": {
+              "SSEAlgorithm": "AES256"
+            },
+            "BucketKeyEnabled": false,
+            "BlockedEncryptionTypes": {
+              "EncryptionType": [
+                "SSE-C"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "public_access": {
+      "PublicAccessBlockConfiguration": {
+        "BlockPublicAcls": true,
+        "IgnorePublicAcls": true,
+        "BlockPublicPolicy": true,
+        "RestrictPublicBuckets": true
+      }
+    }
+  }
+}

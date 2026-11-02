@@ -1,0 +1,15 @@
+python3 -m unittest discover -s scripts -p 'test_*.py'
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+terraform -chdir=terraform-aws-lab test -no-color
+tests/lab.tftest.hcl... in progress
+  run "lab_plan"... pass
+  run "reject_wrong_region"... pass
+  run "reject_public_ssh"... pass
+tests/lab.tftest.hcl... tearing down
+tests/lab.tftest.hcl... pass
+
+Success! 3 passed, 0 failed.

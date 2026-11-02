@@ -1,0 +1,12 @@
+.DS_Store
+.terraform/
+*.tfstate*
+*.tfplan
+*.pem
+*.key
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+__pycache__/

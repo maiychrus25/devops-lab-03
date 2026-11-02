@@ -1,0 +1,25 @@
+$ terraform output -no-color
+ec2_instance_id = "i-07c08e32d6db58bd7"
+ec2_private_ip = "172.31.36.194"
+ec2_public_dns = "ec2-16-178-143-56.ap-southeast-2.compute.amazonaws.com"
+ec2_public_ip = "16.178.143.56"
+lab_summary = {
+  "EC2_ID" = "i-07c08e32d6db58bd7"
+  "EC2_IP" = "16.178.143.56"
+  "Environment" = "dev"
+  "Region" = "ap-southeast-2"
+  "S3_Bucket" = "lab3-dtc235180104-ca1ac8c6"
+}
+s3_bucket_arn = "arn:aws:s3:::lab3-dtc235180104-ca1ac8c6"
+s3_bucket_name = "lab3-dtc235180104-ca1ac8c6"
+ssh_connect_command = "ssh -i ~/.ssh/lab3-dtc235180104.pem ec2-user@ec2-16-178-143-56.ap-southeast-2.compute.amazonaws.com"
+
+$ terraform state list
+data.aws_vpc.default
+aws_instance.lab_server
+aws_key_pair.lab_key
+aws_s3_bucket.lab_bucket
+aws_s3_bucket_server_side_encryption_configuration.lab_bucket_encryption
+aws_s3_bucket_versioning.lab_bucket_versioning
+aws_security_group.lab_sg
+random_id.bucket_suffix

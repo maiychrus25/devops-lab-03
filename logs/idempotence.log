@@ -1,0 +1,14 @@
+random_id.bucket_suffix: Refreshing state... [id=yhrIxg]
+data.aws_vpc.default: Reading...
+aws_key_pair.lab_key: Refreshing state... [id=lab3-dtc235180104]
+aws_s3_bucket.lab_bucket: Refreshing state... [id=lab3-dtc235180104-ca1ac8c6]
+data.aws_vpc.default: Read complete after 3s [id=vpc-07581132ea9590547]
+aws_security_group.lab_sg: Refreshing state... [id=sg-07672ac62f4e5ff49]
+aws_instance.lab_server: Refreshing state... [id=i-07c08e32d6db58bd7]
+aws_s3_bucket_versioning.lab_bucket_versioning: Refreshing state... [id=lab3-dtc235180104-ca1ac8c6]
+aws_s3_bucket_server_side_encryption_configuration.lab_bucket_encryption: Refreshing state... [id=lab3-dtc235180104-ca1ac8c6]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.

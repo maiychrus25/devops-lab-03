@@ -1,0 +1,16 @@
+$ terraform version
+Terraform v1.11.4
+on darwin_arm64
+
+Your version of Terraform is out of date! The latest version
+is 1.17.1. You can update by downloading from https://developer.hashicorp.com/terraform/install
+
+$ aws --version
+aws-cli/2.38.5 Python/3.14.8 Darwin/25.5.0 script-exe/arm64
+
+$ aws sts get-caller-identity --profile aws-toolkit --region ap-southeast-2 --output json --no-cli-pager
+{
+    "UserId": "AROASD5JI3DOZCTIPY2FI:f4d834f8-e0a1-70e5-b043-299a07f7e611",
+    "Account": "145847015645",
+    "Arn": "arn:aws:sts::145847015645:assumed-role/AccountFullAccessRole/f4d834f8-e0a1-70e5-b043-299a07f7e611"
+}

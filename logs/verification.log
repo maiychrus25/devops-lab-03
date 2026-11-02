@@ -1,0 +1,2 @@
+Round 1: PASS — 8 live AWS reads, 15 assertions; EC2 running, correct outputs/SG, encrypted EBS, IMDSv2, S3 versioning/AES256/Block Public Access.
+Round 2: PASS — 8 live AWS reads, 15 assertions; EC2 running, correct outputs/SG, encrypted EBS, IMDSv2, S3 versioning/AES256/Block Public Access.

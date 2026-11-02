@@ -1,0 +1,3 @@
+Terraform state list: EMPTY
+AWS cleanup: PASS — EC2 terminated; bucket, lab Security Group, key pair and EBS volume removed.
+Regression check: PASS — existing default VPC and Security Group preserved.

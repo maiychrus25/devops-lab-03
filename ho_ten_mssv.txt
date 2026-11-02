@@ -1,0 +1,6 @@
+Họ và tên: Nịnh Thanh Khương
+MSSV: DTC235180104
+Lớp: KTPM K22B
+Bài nộp: Lab 3 — Cấp phát Hạ tầng Đám mây với Terraform & AWS
+Ngày thực hành: 02/11/2026
+Nền tảng: macOS ARM64; AWS ap-southeast-2
